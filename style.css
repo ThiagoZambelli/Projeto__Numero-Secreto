@@ -7,6 +7,12 @@
     --bg-color: #E5B8F4;
 }
 
+.fim-de-jogo{
+    --bg-color: #2D033B;
+    --primary-color: #E5B8F4;
+    --secundary-color: #810CA8;
+}
+
 body{
     background-color: var(--bg-color);
     color: var(--primary-color);
@@ -61,4 +67,18 @@ span{
 }
 .btn-jogar:hover{
     color: var(--primary-color);
+}
+
+.btn-fim-de-jogo{
+    font-size: 1em;
+    padding: .5em 1em;
+    border: none;
+    border-radius: .2em;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    margin-top: 3em;
+    cursor: pointer;
+}
+.btn-fim-de-jogo:hover{
+    color: var(--secundary-color);
 }

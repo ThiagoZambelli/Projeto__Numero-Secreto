@@ -1,7 +1,18 @@
 function verificaValidacaoDoChute(chute) {
     const numero = +chute;
     if(chuteForInvalido(numero)){
-        elementoChute.innerHTML += '<div>Valor invalido, use apenas numeros. Obrigado!</div>'
+
+        if(fimDeJogo(chute)){
+            document.body.innerHTML = `
+            <h1>Fim De Jogo</h1>
+            <h3>Recarregue a pagina para começar</h3>
+            <button id="jogar-novamente" Class="btn-fim-de-jogo">Jogar Novamente</button> 
+            `;
+            document.body.classList.toggle('fim-de-jogo');            
+        }else{
+            elementoChute.innerHTML += '<div>Valor invalido, use apenas numeros. Obrigado!</div>'
+        }
+        
     }
 
 
@@ -27,7 +38,10 @@ function verificaValidacaoDoChute(chute) {
     }
 }
 
+function fimDeJogo(chute){
+    return chute ==='Fim de jogo'
 
+}
 
 function chuteForInvalido(numero) {
     return Number.isNaN(numero);
