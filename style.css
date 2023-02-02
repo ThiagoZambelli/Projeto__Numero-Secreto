@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Gruppo&family=Inter:wght@400;500;600&display=swap');
+
+:root{
+    --font-family: 'Aboreto', cursive, 'Gruppo', cursive, 'Inter', sans-serif;
+    --primary-color: #810CA8;
+    --secundary-color:#2D033B;
+    --bg-color: #E5B8F4;
+}
+
+body{
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+h1{
+    font-size: 2.5em;
+}
+h2{
+    font-size: 2em;
+    text-decoration: underline;
+}
+h3{
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+span{
+    color: var(--secundary-color);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.mensagem{
+    font-size: 1.5em;
+    margin-top: 2em;
+}
+
+.box{
+    border: 2px dashed var(--secundary-color);
+    display: inline-block;
+    font-size: 3em;
+    padding: .2em;
+    margin: .2em;
+}
+.btn-jogar{
+    font-size: 1em;
+    padding: .5em 1em;
+    border: none;
+    border-radius: .2em;
+    background-color: var(--secundary-color);
+    color: var(--bg-color);
+    margin-top: 3em;
+    cursor: pointer;
+}
+.btn-jogar:hover{
+    color: var(--primary-color);
+}
